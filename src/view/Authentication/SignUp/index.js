@@ -338,7 +338,7 @@ export default function SignUp(props) {
         return;
       } else {
         alert("회원가입에 성공했습니다.");
-        axios.post("http://52.79.68.204:5001/userjoin", { user_email: email }).then((res) => {
+        axios.post("http://localhost:5100/userjoin", { user_email: email }).then((res) => {
           console.log(res);
         });
         navigate("/");

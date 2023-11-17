@@ -28,7 +28,8 @@ function StarRating2({ rating, onStarClick, user_id, movie_id }) {
           if (res.data) {
             alert("별점이 등록되었습니다.");
             axios
-              .post("http://52.79.68.204:5001/recommend", body)
+              .post("http://localhost:5100/recommend", body)
+              //  52.79.68.204:5001
               .then((res) => {
                 if (res.data) {
                   alert("추천 영화가 등록되었습니다.");

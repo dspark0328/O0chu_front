@@ -36,7 +36,7 @@ function App() {
         <Route path="/movies/list/newlsit" element={<NewMovie />}></Route>
         <Route path="/movies/list/serach" element={<Search />}></Route>
         <Route path="/movies/detail" element={<Moviedetailinfo />}></Route>
-        <Route path="/movies/wishlist" element={<Wishlist />}></Route>
+        <Route path="/movies/list/wishlist" element={<Wishlist />}></Route>
         <Route path="/search/research/:search" element={<Searchlist />}></Route>
         <Route path="/login" element={<Sign />}></Route>
         <Route path="/register" element={<SignUp />}></Route>

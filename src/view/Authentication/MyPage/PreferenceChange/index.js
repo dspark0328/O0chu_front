@@ -73,7 +73,7 @@ export default function PreferenceChange(props) {
     try {
       const email = userInfo.email;
 
-      await axios.post("http://52.79.68.204:5001/change", { user_email: email });
+      await axios.post("http://localhost:5100/change", { user_email: email });
 
       const token = Cookies.get("token");
       const response = await axios.put(
